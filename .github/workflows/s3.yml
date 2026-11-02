@@ -1,0 +1,10 @@
+name: Copia a S3
+on:
+ push:
+ branches: [ main ]
+jobs:
+ deploy-s3:
+ runs-on: ubuntu-latest
+ steps:
+ - name: Descargar el código del repositorio
+ uses: actions/checkout@v4
